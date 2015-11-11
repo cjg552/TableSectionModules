@@ -1,0 +1,14 @@
+PODS:
+  - TableSectionModules (0.1.0)
+
+DEPENDENCIES:
+  - TableSectionModules (from `../`)
+
+EXTERNAL SOURCES:
+  TableSectionModules:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TableSectionModules: ce3da0f3574794d603539d18a6808ebe3e8b7eb6
+
+COCOAPODS: 0.38.2

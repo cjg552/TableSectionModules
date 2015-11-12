@@ -1,9 +1,9 @@
 {
   "name": "TableSectionModules",
   "version": "0.1.0",
-  "summary": "A short description of TableSectionModules.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/TableSectionModules",
+  "summary": "TableView Section Modules to reuse it in serveral places",
+  "description": "TableView Section Modules to reuse it in serveral places.\nYou can create modules unified and use it in several tableViews. Your ViewController is cleaner and you can divide UI in individual modules.",
+  "homepage": "https://github.com/cjg552/TableSectionModules",
   "license": "MIT",
   "authors": {
     "Carlos Jimenez Galindo": "iphonehipoglucido@gmail.com"

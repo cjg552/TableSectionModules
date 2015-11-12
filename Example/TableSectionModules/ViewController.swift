@@ -7,17 +7,19 @@
 //
 
 import UIKit
+import TableSectionModules
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func configureTableSectionModules {
+        self.tableSectionModules = []
+        let firstModule: FirstModule = FirstModule(self.baseTableView,self.tableSectionModules.count)
+        
     }
 
 }

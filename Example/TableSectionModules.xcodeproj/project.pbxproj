@@ -13,6 +13,10 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7F70C92B8277CA9750FCCCD5 /* Pods_TableSectionModules_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979822A02B4EDA9C5D3154C5 /* Pods_TableSectionModules_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D84C62FB1BF3A60B0034BAC9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84C62FA1BF3A60B0034BAC9 /* ViewController.xib */; };
+		D8DCE69C1BF48B8E0039A3F8 /* FirstExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCE69A1BF48B8E0039A3F8 /* FirstExampleCell.swift */; };
+		D8DCE69D1BF48B8E0039A3F8 /* FirstExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DCE69B1BF48B8E0039A3F8 /* FirstExampleCell.xib */; };
+		D8DCE6A01BF48ED40039A3F8 /* FirstModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCE69F1BF48ED40039A3F8 /* FirstModule.swift */; };
 		D9D4BF0051CECF7504C4A34E /* Pods_TableSectionModules_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE3821F527BEA1069D30437 /* Pods_TableSectionModules_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -45,6 +49,10 @@
 		9108979B3C72C19CDFEEF2D4 /* Pods-TableSectionModules_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableSectionModules_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableSectionModules_Tests/Pods-TableSectionModules_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		979822A02B4EDA9C5D3154C5 /* Pods_TableSectionModules_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableSectionModules_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8598837113AFD2FEE3EA9A6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D84C62FA1BF3A60B0034BAC9 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		D8DCE69A1BF48B8E0039A3F8 /* FirstExampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstExampleCell.swift; sourceTree = "<group>"; };
+		D8DCE69B1BF48B8E0039A3F8 /* FirstExampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstExampleCell.xib; sourceTree = "<group>"; };
+		D8DCE69F1BF48ED40039A3F8 /* FirstModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +110,11 @@
 		607FACD21AFB9204008FA782 /* Example for TableSectionModules */ = {
 			isa = PBXGroup;
 			children = (
+				D8DCE6951BF486320039A3F8 /* Modules */,
+				D8DCE6941BF486220039A3F8 /* Cells */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				D84C62FA1BF3A60B0034BAC9 /* ViewController.xib */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -154,6 +165,55 @@
 				4FE3821F527BEA1069D30437 /* Pods_TableSectionModules_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8DCE6941BF486220039A3F8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D8DCE6971BF486960039A3F8 /* SecondExampleCell */,
+				D8DCE6961BF486650039A3F8 /* FirstExampleCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D8DCE6951BF486320039A3F8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D8DCE6991BF488680039A3F8 /* SecondModule */,
+				D8DCE6981BF487350039A3F8 /* FirstModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D8DCE6961BF486650039A3F8 /* FirstExampleCell */ = {
+			isa = PBXGroup;
+			children = (
+				D8DCE69A1BF48B8E0039A3F8 /* FirstExampleCell.swift */,
+				D8DCE69B1BF48B8E0039A3F8 /* FirstExampleCell.xib */,
+			);
+			path = FirstExampleCell;
+			sourceTree = "<group>";
+		};
+		D8DCE6971BF486960039A3F8 /* SecondExampleCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SecondExampleCell;
+			sourceTree = "<group>";
+		};
+		D8DCE6981BF487350039A3F8 /* FirstModule */ = {
+			isa = PBXGroup;
+			children = (
+				D8DCE69F1BF48ED40039A3F8 /* FirstModule.swift */,
+			);
+			path = FirstModule;
+			sourceTree = "<group>";
+		};
+		D8DCE6991BF488680039A3F8 /* SecondModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SecondModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				D8DCE69D1BF48B8E0039A3F8 /* FirstExampleCell.xib in Resources */,
+				D84C62FB1BF3A60B0034BAC9 /* ViewController.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +418,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				D8DCE69C1BF48B8E0039A3F8 /* FirstExampleCell.swift in Sources */,
+				D8DCE6A01BF48ED40039A3F8 /* FirstModule.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

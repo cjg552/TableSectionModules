@@ -9,17 +9,17 @@
 Pod::Spec.new do |s|
   s.name             = "TableSectionModules"
   s.version          = "0.1.0"
-  s.summary          = "A short description of TableSectionModules."
+  s.summary          = "TableView Section Modules to reuse it in serveral places"
 
 # This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+#   * TableView Section Modules to reuse it in serveral places
+#   * You can create modules unified and use it in several tableViews.
+#   * Your ViewController is cleaner and you can divide UI in individual modules
+  s.description      = "TableView Section Modules to reuse it in serveral places.
+You can create modules unified and use it in several tableViews. Your ViewController is cleaner and you can divide UI in individual modules.
+"
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/TableSectionModules"
+  s.homepage         = "https://github.com/cjg552/TableSectionModules"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Carlos Jimenez Galindo" => "iphonehipoglucido@gmail.com" }

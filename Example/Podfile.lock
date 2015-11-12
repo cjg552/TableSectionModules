@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TableSectionModules: ce3da0f3574794d603539d18a6808ebe3e8b7eb6
+  TableSectionModules: a58588c4c353b6d0acf60723118094ec9c7e4b69
 
 COCOAPODS: 0.38.2

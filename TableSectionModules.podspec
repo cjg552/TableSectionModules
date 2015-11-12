@@ -22,9 +22,9 @@ You can create modules unified and use it in several tableViews. Your ViewContro
   s.homepage         = "https://github.com/cjg552/TableSectionModules"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Carlos Jimenez Galindo" => "iphonehipoglucido@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/TableSectionModules.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Carlos Jimenez Galindo" => "jimenezgalindocarlos@gmail.com" }
+  s.source           = { :git => "https://github.com/cjg552/TableSectionModules.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/carlos_jimen'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true

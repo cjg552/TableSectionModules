@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018C2EF56844BF9FC9F2A9AD804BBF1D /* ModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194657D198F7CAF2FCE28D71B8173E6 /* ModuleCell.swift */; };
 		40822575246EF85B96F88176D1D911FE /* Pods-TableSectionModules_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EC1D473818AB9E326B93A93A3F7658C /* Pods-TableSectionModules_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69A1F54BE7245C6578BC8000DC9D0FEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEA4CC869EF9E8F3A70FF2E18B439FA /* Foundation.framework */; };
 		83831C272DC0D752B12DE3260BDB68F4 /* Pods-TableSectionModules_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 454057BDBEB7248BED29E7D32754DA0A /* Pods-TableSectionModules_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,30 +16,29 @@
 		9760970242125E0ED5F666C0B5EAAC62 /* Pods-TableSectionModules_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B22F50AF14A31269BCF5002C146625B /* Pods-TableSectionModules_Tests-dummy.m */; };
 		ACC6ABAA46631589E511D4F26E9320E3 /* TableSectionModules.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAB4C731A035BFB8AFD58909ECC6ABF1 /* TableSectionModules.bundle */; };
 		B5B290244FAA2C24F21D584B1EF6EBCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEA4CC869EF9E8F3A70FF2E18B439FA /* Foundation.framework */; };
-		D8DCE6AD1BF4AE8E0039A3F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCE6A91BF4AE8E0039A3F8 /* BaseViewController.swift */; };
-		D8DCE6AE1BF4AE8E0039A3F8 /* ModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCE6AA1BF4AE8E0039A3F8 /* ModuleCell.swift */; };
-		D8DCE6AF1BF4AE8E0039A3F8 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCE6AB1BF4AE8E0039A3F8 /* NSObjectExtension.swift */; };
-		D8DCE6B01BF4AE8E0039A3F8 /* TableSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCE6AC1BF4AE8E0039A3F8 /* TableSectionModule.swift */; };
+		B79BD4343BCBABB0E6D72D0E6288F5C1 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2533F926CCC88BB6042A4E2C807F532 /* NSObjectExtension.swift */; };
+		D7607DD2DC93A3A8806E06BF55E78598 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04ECDE4FAA92DE1233F2C4DA6BB480 /* BaseViewController.swift */; };
 		DEB21F2BB86C368B933DE63010AD2FE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEA4CC869EF9E8F3A70FF2E18B439FA /* Foundation.framework */; };
+		EBE0C6DD57CF78B4892B62A2A4050492 /* TableSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A99DCC5FDFB85FDD5F8CBEAC358FF8 /* TableSectionModule.swift */; };
 		F6F208D691D105E652190BE7D09055A7 /* TableSectionModules-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC0BE06BC60D4EAD6CBE9325FFF8077 /* TableSectionModules-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5A964F5AEE0B1CA977B5BCA9058A6BAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D5602DB54EAF13DFC6E6543AB69833C;
-			remoteInfo = "TableSectionModules-TableSectionModules";
-		};
-		9FF593743B60B9D3D2D668242531CD8A /* PBXContainerItemProxy */ = {
+		20632B0BE3594A041C3CBBA9914993A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CC73AFA20651C60F2A05C371FFB39FC9;
 			remoteInfo = TableSectionModules;
 		};
-		B574CD077C25E4C75C1B83CAD89D2112 /* PBXContainerItemProxy */ = {
+		2A5834D378F7A95EE23712EE55760B55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D5602DB54EAF13DFC6E6543AB69833C;
+			remoteInfo = "TableSectionModules-TableSectionModules";
+		};
+		9E70B79B8B114C94B2D9477B5C25B88D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -48,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0194657D198F7CAF2FCE28D71B8173E6 /* ModuleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModuleCell.swift; sourceTree = "<group>"; };
+		03A99DCC5FDFB85FDD5F8CBEAC358FF8 /* TableSectionModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableSectionModule.swift; sourceTree = "<group>"; };
 		0CDBF72096F213071A6B6EE5AAE9A7D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D0A59E61907B0754025C4B3BF87311E /* Pods-TableSectionModules_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TableSectionModules_Example-dummy.m"; sourceTree = "<group>"; };
 		1AA5DB1122B0C6AC152A9C320BE1225C /* Pods-TableSectionModules_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TableSectionModules_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		25CA04522EA4E5B0DF94F1FB58A62959 /* Pods-TableSectionModules_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TableSectionModules_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3EC1D473818AB9E326B93A93A3F7658C /* Pods-TableSectionModules_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TableSectionModules_Tests-umbrella.h"; sourceTree = "<group>"; };
 		454057BDBEB7248BED29E7D32754DA0A /* Pods-TableSectionModules_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TableSectionModules_Example-umbrella.h"; sourceTree = "<group>"; };
+		4D04ECDE4FAA92DE1233F2C4DA6BB480 /* BaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4DEA4CC869EF9E8F3A70FF2E18B439FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5DF3AA19F19F9BC8CE29108E176E6571 /* Pods-TableSectionModules_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableSectionModules_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		60FF45185A700C31F28D53EBD1A6AD44 /* TableSectionModules.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableSectionModules.xcconfig; sourceTree = "<group>"; };
@@ -74,14 +77,11 @@
 		C4972B0255B1EA45776F489D18C65392 /* Pods-TableSectionModules_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableSectionModules_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CB89E7A7F455AD8427780C64D43ED545 /* TableSectionModules-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TableSectionModules-dummy.m"; sourceTree = "<group>"; };
 		D169DCB117D3C90657B9FF5F44D48010 /* Pods_TableSectionModules_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableSectionModules_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8DCE6A91BF4AE8E0039A3F8 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		D8DCE6AA1BF4AE8E0039A3F8 /* ModuleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleCell.swift; sourceTree = "<group>"; };
-		D8DCE6AB1BF4AE8E0039A3F8 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
-		D8DCE6AC1BF4AE8E0039A3F8 /* TableSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionModule.swift; sourceTree = "<group>"; };
 		DFC0BE06BC60D4EAD6CBE9325FFF8077 /* TableSectionModules-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableSectionModules-umbrella.h"; sourceTree = "<group>"; };
 		DFDBE537F3FFF2C366C339F70BF4E299 /* Pods_TableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableSectionModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D507E6781D695BC2A381CDD040124A /* Pods-TableSectionModules_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableSectionModules_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EAB4C731A035BFB8AFD58909ECC6ABF1 /* TableSectionModules.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableSectionModules.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2533F926CCC88BB6042A4E2C807F532 /* NSObjectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		F66345ED1CE9915503068A4DD2DF18D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBB1AC7E6BDA19060E3848C2321C14A9 /* Pods-TableSectionModules_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TableSectionModules_Example.modulemap"; sourceTree = "<group>"; };
 		FFE0B357741214D67FD7FC1F28191486 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,6 +122,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EE4C64016FBD6F01C3B3FD1DCE66BC7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D04ECDE4FAA92DE1233F2C4DA6BB480 /* BaseViewController.swift */,
+				0194657D198F7CAF2FCE28D71B8173E6 /* ModuleCell.swift */,
+				F2533F926CCC88BB6042A4E2C807F532 /* NSObjectExtension.swift */,
+				03A99DCC5FDFB85FDD5F8CBEAC358FF8 /* TableSectionModule.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		344C9D1660BC7E5BDEEBD38CB621E7A2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,21 +238,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C27C598DB01D689B5A85487579FE18C9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D8DCE6A91BF4AE8E0039A3F8 /* BaseViewController.swift */,
-				D8DCE6AA1BF4AE8E0039A3F8 /* ModuleCell.swift */,
-				D8DCE6AB1BF4AE8E0039A3F8 /* NSObjectExtension.swift */,
-				D8DCE6AC1BF4AE8E0039A3F8 /* TableSectionModule.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		C791F9670F67EA9CA07EE4E20C2E4B07 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C27C598DB01D689B5A85487579FE18C9 /* Classes */,
+				1EE4C64016FBD6F01C3B3FD1DCE66BC7 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1830F6CC041C482190D2E20D5407C020 /* PBXTargetDependency */,
+				4BBDD5AD5CDA9C9EC51E67F0D0877170 /* PBXTargetDependency */,
 			);
 			name = "Pods-TableSectionModules_Tests";
 			productName = "Pods-TableSectionModules_Tests";
@@ -334,7 +334,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DE07B5F468BC94EA01FC9767903DCAC9 /* PBXTargetDependency */,
+				0CFD5AEFF8E72EE5AB0BD1B58F8E0C5E /* PBXTargetDependency */,
 			);
 			name = TableSectionModules;
 			productName = TableSectionModules;
@@ -352,7 +352,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				8DB2977435DE54BCE20AE6467747BA8F /* PBXTargetDependency */,
+				F70523746B41E155288DFF1D00F0A76B /* PBXTargetDependency */,
 			);
 			name = "Pods-TableSectionModules_Example";
 			productName = "Pods-TableSectionModules_Example";
@@ -365,7 +365,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -411,11 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8DCE6B01BF4AE8E0039A3F8 /* TableSectionModule.swift in Sources */,
 				918FE8AA22933789C3F83FE4705D5AB3 /* Pods-TableSectionModules_Example-dummy.m in Sources */,
-				D8DCE6AE1BF4AE8E0039A3F8 /* ModuleCell.swift in Sources */,
-				D8DCE6AD1BF4AE8E0039A3F8 /* BaseViewController.swift in Sources */,
-				D8DCE6AF1BF4AE8E0039A3F8 /* NSObjectExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +434,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7607DD2DC93A3A8806E06BF55E78598 /* BaseViewController.swift in Sources */,
+				018C2EF56844BF9FC9F2A9AD804BBF1D /* ModuleCell.swift in Sources */,
+				B79BD4343BCBABB0E6D72D0E6288F5C1 /* NSObjectExtension.swift in Sources */,
+				EBE0C6DD57CF78B4892B62A2A4050492 /* TableSectionModule.swift in Sources */,
 				85C5A69011B69166A7B8194809CBF8DA /* TableSectionModules-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,23 +445,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1830F6CC041C482190D2E20D5407C020 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TableSectionModules;
-			target = CC73AFA20651C60F2A05C371FFB39FC9 /* TableSectionModules */;
-			targetProxy = 9FF593743B60B9D3D2D668242531CD8A /* PBXContainerItemProxy */;
-		};
-		8DB2977435DE54BCE20AE6467747BA8F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TableSectionModules;
-			target = CC73AFA20651C60F2A05C371FFB39FC9 /* TableSectionModules */;
-			targetProxy = B574CD077C25E4C75C1B83CAD89D2112 /* PBXContainerItemProxy */;
-		};
-		DE07B5F468BC94EA01FC9767903DCAC9 /* PBXTargetDependency */ = {
+		0CFD5AEFF8E72EE5AB0BD1B58F8E0C5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "TableSectionModules-TableSectionModules";
 			target = 7D5602DB54EAF13DFC6E6543AB69833C /* TableSectionModules-TableSectionModules */;
-			targetProxy = 5A964F5AEE0B1CA977B5BCA9058A6BAF /* PBXContainerItemProxy */;
+			targetProxy = 2A5834D378F7A95EE23712EE55760B55 /* PBXContainerItemProxy */;
+		};
+		4BBDD5AD5CDA9C9EC51E67F0D0877170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TableSectionModules;
+			target = CC73AFA20651C60F2A05C371FFB39FC9 /* TableSectionModules */;
+			targetProxy = 9E70B79B8B114C94B2D9477B5C25B88D /* PBXContainerItemProxy */;
+		};
+		F70523746B41E155288DFF1D00F0A76B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TableSectionModules;
+			target = CC73AFA20651C60F2A05C371FFB39FC9 /* TableSectionModules */;
+			targetProxy = 20632B0BE3594A041C3CBBA9914993A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -470,7 +470,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8387DA1212877AE0A031F9AABB18CC0C /* Pods-TableSectionModules_Example.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -652,7 +651,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4D507E6781D695BC2A381CDD040124A /* Pods-TableSectionModules_Example.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

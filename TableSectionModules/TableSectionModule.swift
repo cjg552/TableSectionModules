@@ -19,11 +19,11 @@ public class TableSectionModule: NSObject {
     }
     
     public func heightForHeader() -> CGFloat {
-        return 1;
+        return CGFloat.min;
     }
     
     public func heightForFooter() -> CGFloat {
-        return 15;
+        return CGFloat.min;
     }
     
     public func viewForHeader() -> UIView {

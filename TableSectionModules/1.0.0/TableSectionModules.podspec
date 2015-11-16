@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '8.0'
 s.name = "TableSectionModules"
-s.summary = "TableSectionModules lets you to reuse table section modules in different tablevies"
+s.summary = "TableSectionModules lets you create section of a tableView as modules you can reuse"
 s.requires_arc = true
 
 # 2
@@ -30,5 +30,5 @@ s.framework = "Foundation"
 s.source_files = "TableSectionModules/**/*.{swift}"
 
 # 9
-# s.resources = "TableSectionModules/**/*.{png,jpeg,jpg,storyboard,xib}"
+# s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib}"
 end

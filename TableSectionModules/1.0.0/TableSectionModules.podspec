@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '8.0'
 s.name = "TableSectionModules"
-s.summary = "TableSectionModules lets you create section of a tableView as modules you can reuse"
+s.summary = "TableSectionModules lets you to reuse table section modules in different tablevies"
 s.requires_arc = true
 
 # 2
@@ -24,10 +24,11 @@ s.source = { :git => "https://github.com/cjg552/TableSectionModules.git", :tag =
 
 # 7
 s.framework = "UIKit"
+s.framework = "Foundation"
 
 # 8
 s.source_files = "TableSectionModules/**/*.{swift}"
 
 # 9
-# s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib}"
+# s.resources = "TableSectionModules/**/*.{png,jpeg,jpg,storyboard,xib}"
 end

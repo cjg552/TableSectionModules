@@ -1,6 +1,0 @@
-framework module TableSectionModules {
-  umbrella header "TableSectionModules-umbrella.h"
-
-  export *
-  module * { export * }
-}

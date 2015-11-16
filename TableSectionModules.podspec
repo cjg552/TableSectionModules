@@ -24,6 +24,7 @@ s.source = { :git => "https://github.com/cjg552/TableSectionModules.git", :tag =
 
 # 7
 s.framework = "UIKit"
+s.framework = "Foundation"
 
 # 8
 s.source_files = "TableSectionModules/**/*.{swift}"

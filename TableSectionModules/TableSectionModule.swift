@@ -9,59 +9,59 @@
 import UIKit
 import Foundation
 
-class TableSectionModule: NSObject {
+public class TableSectionModule: NSObject {
     var tableView:UITableView!
     var section:NSInteger!
     
-    init(tableView:UITableView, section:NSInteger) {
+    public init(tableView:UITableView, section:NSInteger) {
         self.tableView = tableView;
         self.section = section
     }
     
-    func heightForHeader() -> CGFloat {
+    public func heightForHeader() -> CGFloat {
         return 1;
     }
     
-    func heightForFooter() -> CGFloat {
+    public func heightForFooter() -> CGFloat {
         return 15;
     }
     
-    func viewForHeader() -> UIView {
+    public func viewForHeader() -> UIView {
         let view:UIView = UIView(frame: CGRectZero)
         view.backgroundColor = UIColor.clearColor()
         return view
     }
     
-    func viewForFooter() -> UIView {
+    public func viewForFooter() -> UIView {
         let view:UIView = UIView(frame: CGRectZero)
         view.backgroundColor = UIColor.clearColor()
         return view
     }
     
-    func cellForRow(row: NSInteger) -> UITableViewCell {
+    public func cellForRow(row: NSInteger) -> UITableViewCell {
         NSException(name:NSInternalInconsistencyException, reason:"You must override this method in a subclass", userInfo:nil).raise()
         abort()
     }
     
-    func heightForRow(row: NSInteger) -> CGFloat {
+    public func heightForRow(row: NSInteger) -> CGFloat {
         NSException(name:NSInternalInconsistencyException, reason:"You must override this method in a subclass", userInfo:nil).raise()
         abort()
     }
     
-    func numberOfRows() -> NSInteger {
+    public func numberOfRows() -> NSInteger {
         NSException(name:NSInternalInconsistencyException, reason:"You must override this method in a subclass", userInfo:nil).raise()
         abort()
     }
     
-    func didSelectRow(row: NSInteger) {
+    public func didSelectRow(row: NSInteger) {
         
     }
     
-    func canEditRow(row: NSInteger) -> Bool {
+    public func canEditRow(row: NSInteger) -> Bool {
         return false
     }
     
-    func commitEditingStyle(editingStyle: UITableViewCellEditingStyle, forRow row: NSInteger) {
+    public func commitEditingStyle(editingStyle: UITableViewCellEditingStyle, forRow row: NSInteger) {
         
     }
 }

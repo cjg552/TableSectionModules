@@ -8,24 +8,24 @@
 
 import UIKit
 
-class ModuleCell: UITableViewCell {
+public class ModuleCell: UITableViewCell {
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    public override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
     
-    class func reuseIdentifier() -> String {
+    public class func reuseIdentifier() -> String {
         return self.nameOfClass
     }
     
-    class func cellFromNib() -> AnyObject {
+    public class func cellFromNib() -> AnyObject {
         let nib = NSBundle.mainBundle().loadNibNamed(self.nameOfClass, owner: self, options: nil)
         return nib.first!
     }

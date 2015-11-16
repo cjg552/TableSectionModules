@@ -10,8 +10,8 @@ import UIKit
 import Foundation
 
 public class TableSectionModule: NSObject {
-    var tableView:UITableView!
-    var section:NSInteger!
+    public var tableView:UITableView!
+    public var section:NSInteger!
     
     public init(tableView:UITableView, section:NSInteger) {
         self.tableView = tableView;

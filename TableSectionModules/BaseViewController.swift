@@ -11,8 +11,8 @@ import Foundation
 
 public class BaseViewController: UIViewController {
     
-    @IBOutlet var baseTableView:UITableView?
-    var tableSectionModules:[TableSectionModule]?
+    @IBOutlet public var baseTableView:UITableView?
+    public var tableSectionModules:[TableSectionModule]?
     
 
     public override func viewDidLoad() {

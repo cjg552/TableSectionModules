@@ -71,4 +71,5 @@ public class TableSectionModule: NSObject {
     public func commitEditingStyle(editingStyle: UITableViewCellEditingStyle, forRow row: NSInteger) {
         
     }
+    
 }

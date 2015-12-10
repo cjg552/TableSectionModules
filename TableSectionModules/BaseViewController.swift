@@ -39,6 +39,14 @@ extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
         return self.tableSectionModules![section].viewForFooter()
     }
     
+    public func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return self.tableSectionModules![section].heightForHeader()
+    }
+    
+    public func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return self.tableSectionModules![section].viewForHeader()
+    }
+    
     public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.tableSectionModules!.count
     }
@@ -67,5 +75,6 @@ extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         self.tableSectionModules![indexPath.section].commitEditingStyle(editingStyle, forRow: indexPath.row)
     }
+    
 }
 

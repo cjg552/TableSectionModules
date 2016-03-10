@@ -56,6 +56,7 @@ extension BaseViewController: TableSectionModuleSectionSource {
     }
     
     public func replaceModuleAtSection(section: NSInteger, withModule module: TableSectionModule) {
+        module.sectionSource = self
         self.tableSectionModules[section] = module
     }
     

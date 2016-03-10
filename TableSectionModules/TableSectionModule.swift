@@ -10,13 +10,18 @@ import UIKit
 import Foundation
 
 public class TableSectionModule: NSObject {
-    public var tableView:UITableView!
-    public var section:NSInteger!
+    weak public var sectionSource: TableSectionModuleSectionSource?
+    private(set) public var tableView:UITableView!
+    private(set) public var section:NSInteger{
+        get {
+            return (self.sectionSource?.sectionForModule(self))!
+        }
+        set { self.section = newValue }
+    }
     
-    public init(tableView:UITableView, section:NSInteger) {
+    public init(tableView:UITableView) {
         super.init()
         self.tableView = tableView
-        self.section = section
         
         self.registerViews()
     }
@@ -30,7 +35,7 @@ public class TableSectionModule: NSObject {
     }
     
     public func registerViews() {
-    
+        
     }
     
     public func viewForHeader() -> UIView {
@@ -72,4 +77,8 @@ public class TableSectionModule: NSObject {
         
     }
     
+}
+
+public protocol TableSectionModuleSectionSource : NSObjectProtocol {
+    func sectionForModule(module: TableSectionModule) -> NSInteger
 }

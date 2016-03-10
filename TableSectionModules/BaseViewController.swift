@@ -12,8 +12,7 @@ import Foundation
 public class BaseViewController: UIViewController {
     
     @IBOutlet public var baseTableView:UITableView?
-    private var tableSectionModules:[TableSectionModule] = []
-    
+    private(set) var tableSectionModules:[TableSectionModule] = []
     
     public override func viewDidLoad() {
         super.viewDidLoad()

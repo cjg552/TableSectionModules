@@ -24,6 +24,7 @@ public class BaseViewController: UIViewController {
     }
     
     public func configureTableSectionModules() {
+        self.tableSectionModules = []
     }
     
 }

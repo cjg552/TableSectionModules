@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 
+// MARK: - BaseViewController's cycle of Life
 public class BaseViewController: UIViewController {
     
     @IBOutlet public var baseTableView:UITableView?
@@ -29,6 +30,7 @@ public class BaseViewController: UIViewController {
     
 }
 
+// MARK: - TableSectionModuleSectionSource
 extension BaseViewController: TableSectionModuleSectionSource {
     public func appendModule(module: TableSectionModule) {
         module.sectionSource = self;
@@ -66,6 +68,7 @@ extension BaseViewController: TableSectionModuleSectionSource {
     }
 }
 
+// MARK: - UITableViewDelegate, UITableViewDataSource
 extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return self.tableSectionModules[section].heightForFooter()

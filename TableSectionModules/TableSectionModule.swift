@@ -79,6 +79,7 @@ public class TableSectionModule: NSObject {
     
 }
 
+// MARK: - Private Protocol for auto control of the section
 public protocol TableSectionModuleSectionSource : NSObjectProtocol {
     func sectionForModule(module: TableSectionModule) -> NSInteger
 }

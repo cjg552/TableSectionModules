@@ -35,7 +35,7 @@ public class TableSectionModule: NSObject {
     }
     
     public func registerViews() {
-        
+        self.autoRegisterViews()
     }
     
     public func viewForHeader() -> UIView {
@@ -79,6 +79,64 @@ public class TableSectionModule: NSObject {
     
 }
 
+// MARK: - Autoregistration of Cells, Header and Footer methods
+extension TableSectionModule {
+    private func autoRegisterViews() {
+        self.autoRegisterClassForCells()
+        self.autoRegisterClassForHeadersFooters()
+        self.autoRegisterNibsForCells()
+        self.autoRegisterNibsForHeadersFooters()
+    }
+    
+    //Autoregistrion - Override those methods if the ReuseIdentifier is exactly the same that the Class and the Nib file (if exits)
+    public func registerClassForCells() -> [AnyClass] {
+        return []
+    }
+    
+    public func registerClassForHeadersFooters() -> [AnyClass] {
+        return []
+    }
+    
+    public func registerNibsForCells() -> [AnyClass] {
+        return []
+    }
+    
+    public func registerNibsForHeadersFooters() -> [AnyClass] {
+        return []
+    }
+    
+    private func autoRegisterClassForCells() {
+        for currentClass in self.registerClassForCells() {
+            let identifier = String(currentClass)
+            self.tableView.registerClass(currentClass, forCellReuseIdentifier: identifier)
+        }
+    }
+    
+    private func autoRegisterClassForHeadersFooters() {
+        for currentClass in self.registerClassForHeadersFooters() {
+            let identifier = String(currentClass)
+            self.tableView.registerClass(currentClass, forHeaderFooterViewReuseIdentifier: identifier)
+        }
+    }
+    
+    private func autoRegisterNibsForCells() {
+        for currentClass in self.registerNibsForCells() {
+            let identifier = String(currentClass)
+            let nib = UINib.init(nibName: identifier, bundle: nil)
+            self.tableView.registerNib(nib, forCellReuseIdentifier: identifier)
+        }
+    }
+    
+    private func autoRegisterNibsForHeadersFooters() {
+        for currentClass in self.registerNibsForHeadersFooters() {
+            let identifier = String(currentClass)
+            let nib = UINib.init(nibName: identifier, bundle: nil)
+            self.tableView.registerNib(nib, forHeaderFooterViewReuseIdentifier: identifier)
+        }
+    }
+}
+
+// MARK: - Private Protocol for auto control of the section
 public protocol TableSectionModuleSectionSource : NSObjectProtocol {
     func sectionForModule(module: TableSectionModule) -> NSInteger
 }
